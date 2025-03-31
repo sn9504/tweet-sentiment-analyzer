@@ -15,7 +15,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load model and tokenizer
 model = tf.keras.models.load_model("glove_lstm_attention_model.h5")
-with open("/content/tokenizer.pkl", "rb") as f:
+with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
 # Define labels manually (3-class)
